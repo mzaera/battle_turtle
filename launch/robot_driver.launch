@@ -1,0 +1,5 @@
+<launch>
+
+<node pkg="battle_turtle" type="robot_driver_node" name="controller" output="screen"/>
+
+</launch>
