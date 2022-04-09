@@ -24,7 +24,7 @@ rospack find battle_turtle
 
 
 ## Contributing
-Corrections are welcome, please contact me on my [email](martizaera99@gmail.com).
+Corrections are welcome, please contact me on my email(martizaera99@gmail.com).
 
 
 
