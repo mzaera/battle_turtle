@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+<include file="$(find battle_turtle)/launch/robot_driver.launch" />
+<include file="$(find battle_turtle)/launch/display.launch" />
+
+
+</launch>

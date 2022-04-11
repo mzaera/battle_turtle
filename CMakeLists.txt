@@ -22,9 +22,9 @@ include_directories(
 )
 
 
-add_executable(robot_driver_node src/robot_driver_node.cpp)
+add_executable(robot_driver src/robot_driver.cpp)
 
-target_link_libraries(robot_driver_node
+target_link_libraries(robot_driver
 ${catkin_LIBRARIES}
 )
 

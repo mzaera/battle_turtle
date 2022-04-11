@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>      
+      <node name="rviz" pkg="rviz" type="rviz" args="-d $(find battle_turtle)/rviz_config/turtle_config.rviz" />
+      
+      <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
+
+            <param name="robot_description" textfile="$(find battle_turtle)/urdf/turtle_model.urdf" />
+            <param name="publish_frequency" type="double" value="15.0"/>
+
+            <remap from="joint_state" to="joint_state"/>
+      </node>
+
+</launch>
