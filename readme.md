@@ -1,8 +1,17 @@
 # Installation & Setup
 
+To update de pgk:
+
+```bash
+cd ~/catkin_ws/src/battle_turtle
+git pull https://github.com/mzaera/battle_turtle.gitcd ~/catkin_ws
+```
+
 ## Main pkg battle_turtle
 
 **1.** Install the package from ths repo:
+
+Before the catkin_make be sure you have already installed all the dependencies as rosserial-arduino or rosserial.
 
 ```bash
 cd ~/catkin_ws/src
