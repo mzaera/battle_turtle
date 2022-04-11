@@ -1,4 +1,4 @@
-# Installation and Setup environment
+# Installation & Setup
 
 ## Main pkg battle_turtle
 
@@ -53,12 +53,13 @@ Possile ERROR:
 avrdude: ser_open(): can't open device "/dev/ttyUSB0": Permission 
 deniedioctl("TIOCMGET"): Inappropriate ioctl for device.
 ```
-To fix it, enter the command (repace the <> by the username of the PC):
+To fix it, enter the command:
 
 ```bash
-$ sudo usermod -a -G dialout <username>
+$ sudo usermod -a -G dialout <XXXX>
 $ sudo chmod a+rw /dev/ttyUSB0
 ```
+ Repace the <> by the username of the PC.
 
 **5** Create a new file in the following destination:
 
@@ -86,13 +87,32 @@ sudo udevadm trigger
 ls -l /dev/arduino_mega
 ```
 
+## YDLidar connection
+
+**1** Clone package to your catkin's workspace src folder:
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/EAIBOT/ydlidar.git
+cd ~/catkin_ws
+catkin_make
+```
+
+**2** Create the name "/dev/ydlidar" for YDLIDAR in udev rules by running the scripts:
+```bash
+roscd ydlidar/startup
+sudo chmod 777 ./*
+sudo sh initenv.sh
+```
+
+**3** Connect the lidar to any USB port and test it by:
+```bash
+roslaunch ydlidar display.launch
+```
 
 # Usage
 
+Developing...
 
-
-# Contributing
-Corrections are welcome, please contact me on my email (martizaera99@gmail.com).
 
 
 

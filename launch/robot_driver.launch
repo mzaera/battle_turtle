@@ -3,6 +3,6 @@
 
 <node pkg="battle_turtle" type="robot_driver" name="controller" output="screen"/>
 
-<node pkg="rosserial_python" type="serial_node.py" args="/dev/arduino_mega" name="serial_node" respawn="true" output="screen"/> <!-- Will complain about ardunio mega need to be done pag 28 of 6_3_RosIntegration-->
+<node pkg="rosserial_python" type="serial_node.py" args="/dev/arduino_mega" name="serial_node" respawn="true" output="screen"/> 
 
 </launch>
